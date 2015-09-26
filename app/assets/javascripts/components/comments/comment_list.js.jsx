@@ -14,7 +14,7 @@ var CommentList = React.createClass({
   },
   render: function(){
     var output;
-    if (this.props.data.length === 0){
+    if (this.props.data && this.props.data.length === 0){
       output = this.noNodes()
     } else {
       output = this.commentNodes()
