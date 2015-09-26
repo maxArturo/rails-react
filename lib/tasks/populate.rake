@@ -3,7 +3,7 @@ namespace :db do
   task populate: :environment do
     Comment.destroy_all
 
-    10.times do
+    50.times do
       Comment.create(
         author: FFaker::Name.first_name + " " + FFaker::Name.last_name,
         text: FFaker::HipsterIpsum.words(20).join(' ')
