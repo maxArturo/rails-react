@@ -9,7 +9,7 @@ var Comment = React.createClass({
         <h4 className="commentAuthor">
           {this.props.author}
         </h4>
-        <div class="row">
+        <div className="row">
           <span dangerouslySetInnerHTML={this.markup()} />
         </div>
       </div>
