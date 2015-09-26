@@ -44,8 +44,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  #add react
+  #add react and friends
   gem 'react-rails', '~> 1.3.0'
+  gem 'sprockets-coffee-react'
 
   gem 'haml'
 end
