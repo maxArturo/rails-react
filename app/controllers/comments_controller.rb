@@ -3,6 +3,6 @@ class CommentsController < ApplicationController
   end
 
   def all
-    @comments = Comment.all.shuffle.first(10)
+    @comments = Comment.all.shuffle.first(5)
   end
 end

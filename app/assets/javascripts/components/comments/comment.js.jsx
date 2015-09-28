@@ -6,7 +6,7 @@ var Comment = React.createClass({
   render: function(){
     return(
       <div className="comment">
-        <h4 className="commentAuthor">
+        <h4 className="comment-author">
           {this.props.author}
         </h4>
         <div className="row">
