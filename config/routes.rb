@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resources 'comments', only: 'index'
   get 'comments/all', to: 'comments#all', defaults: { format: 'json' }
+  post 'comments/all', to: 'comments#create', defaults: { format: 'json' }
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
