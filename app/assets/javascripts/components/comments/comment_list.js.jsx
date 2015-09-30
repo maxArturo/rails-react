@@ -1,16 +1,16 @@
-var CommentList = React.createClass({
+CommentBox.CommentList = React.createClass({
   commentNodes: function(){
     var nodes = this.props.data.map(function(d){
       return(
-        <Comment author={d.author}>
+        <CommentBox.Comment author={d.author}>
           {d.text}
-        </Comment>
+        </CommentBox.Comment>
       );
     });
     return nodes;
   },
   noNodes: function(){
-    return <p className="foo">No comments yet... </p>;
+    return <p className="foo"> No comments yet... </p>;
   },
   render: function(){
     var output;
